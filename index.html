@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Confección y venta de ropas MARY. Moda femenina, calidad y estilo.">
+  <title>Confección y Venta de Ropas MARY</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="MARY inicio">
+      <span class="hanger">♡</span>
+      <span class="brand-words"><small>CONFECCIÓN Y VENTA DE ROPAS</small><strong>♥ MARY ♥</strong></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+    <nav id="mainNav">
+      <a class="active" href="#inicio">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#productos">Productos</a>
+      <a href="#direccion">Dirección</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="cart-top" id="openCart" aria-label="Ver carrito">🛒 <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="script">Tu estilo, nuestra pasión <span>♥</span></p>
+        <h1>CONFECCIÓN Y VENTA DE ROPAS <b>♥ MARY ♥</b></h1>
+        <p>Ropa de dama, moderna, cómoda y a la moda.<br>¡Porque cada mujer merece sentirse única!</p>
+        <a class="primary-btn" href="#productos">🛒 &nbsp; Ver productos</a>
+      </div>
+      <div class="hero-photo" role="img" aria-label="Moda femenina en una boutique"></div>
+      <div class="hero-note">Moda<br>Calidad<br>Estilo <span>♥</span><i></i></div>
+    </section>
+
+    <section class="products-section" id="productos">
+      <div class="section-heading">
+        <h2><span>♥</span> Nuestros Productos <span>♥</span></h2>
+        <p>Descubre nuestra colección de ropa para dama</p>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="info-strip">
+      <article id="nosotros"><div class="round-icon">♥</div><h3>Sobre Nosotros</h3><p>Somos un emprendimiento dedicado a la confección y venta de ropa para dama. Nuestro objetivo es ofrecer prendas bonitas, cómodas y a precios accesibles.</p></article>
+      <article><div class="round-icon">♧</div><h3>Envíos y Pedidos</h3><p>Realiza tu pedido desde la comodidad de tu hogar. Te atendemos por WhatsApp para coordinar tu compra.</p></article>
+      <article><div class="round-icon">⬟</div><h3>Atención Confiable</h3><p>Consulta tallas, colores y disponibilidad antes de confirmar tu pedido. ¡Con gusto te ayudaremos!</p></article>
+      <article id="direccion"><div class="round-icon">♦</div><h3>Nuestra Dirección</h3><p>Eterazama - Bolivia<br>Para más detalles sobre la entrega, contáctanos por WhatsApp.</p></article>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <p>CONFECCIÓN Y VENTA DE ROPAS MARY &nbsp; | &nbsp; Todos los derechos reservados © <span id="year"></span></p>
+  </footer>
+
+  <button class="whatsapp-float" id="whatsappContact" aria-label="Escribir por WhatsApp">◉ &nbsp; Escríbenos por WhatsApp</button>
+
+  <div class="modal-backdrop" id="cartModal" aria-hidden="true">
+    <section class="cart-modal" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <button class="close-modal" id="closeCart" aria-label="Cerrar">×</button>
+      <h2 id="cartTitle">Tu carrito de compras</h2>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-total">Total: <strong id="cartTotal">Bs. 0</strong></div>
+      <button class="primary-btn checkout" id="checkout">Enviar pedido por WhatsApp</button>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
